@@ -45,12 +45,30 @@ console.log(mixedContent);
 let nums = [10, 20, 15, 30];
 
 let add = nums.reduce(function (accumalate, current, index, array) {
-  console.log(`accumalate => ${accumalate}`);
+  /* console.log(`accumalate => ${accumalate}`);
   console.log(`current => ${current}`);
   console.log(`index => ${index}`);
   console.log(`array => ${array}`);
   console.log(accumalate * current);
-  console.log("#".repeat(12));
+  console.log("#".repeat(12)); */
   return accumalate * current;
 }, 1);
 console.log(add);
+
+let words = ["Bla", "Propaganda", "Other", "AAA", "Battery", "Test"];
+let word = "";
+let theBiggest = words.reduce(function (acc, cur) {
+  return acc.length > cur.length ? acc : cur;
+});
+console.log(theBiggest);
+
+let chars = ["E", "@", "@", "L", "Z", "@", "@", "E", "R", "@", "O"];
+
+let finalString = chars
+  .filter(function (ele) {
+    return !ele.startsWith("@");
+  })
+  .reduce(function (acc, cur) {
+    return `${acc}${cur}`;
+  });
+console.log(finalString);
