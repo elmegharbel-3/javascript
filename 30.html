@@ -1,0 +1,36 @@
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="30.css" rel="stylesheet">
+        <script>
+            let links = document.links
+            document.onclick = function (e) {
+                for (let i = 0; i < links.length; i++) {
+                    if (e.target.classList.contains('open') === true && e.target.innerHTML === "Elzero") {
+                        
+                    }
+                    else {
+                        e.preventDefault()
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="assign">
+            <input type="text" class="classes-to-add"
+                placeholder="Add Classes" />
+            <input type="text" class="classes-to-remove"
+                placeholder="Remove Classes" />
+            <div class="element current" title="Current">Current
+                Element</div>
+            <div class="classes-list">
+                <h5>Current Element Class Lists</h5>
+                <div></div>
+            </div>
+        </div>
+        <script src="30.js"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+form {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+form input,
+form select {
+    width: 50%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+form input:active {
+    background-color: #333;
+}
+form input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+form .results {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 30px;
+}
+form .results .box {
+    background-color: rgb(48, 120, 149);
+    padding: 30px;
+    text-align: center;
+}

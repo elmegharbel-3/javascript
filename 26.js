@@ -44,3 +44,20 @@ console.log(select12);
 console.log(select13);
 console.log(select14);
 console.log(select15);
+
+let result = document.forms[0].getElementsByTagName("input")[0];
+let myDiv = document.forms[0].getElementsByTagName("div")[0];
+result.oninput = function () {
+  return (myDiv.innerHTML = `{${result.value}} USD Dollar = {${(
+    result.value * 15.6
+  ).toFixed(2)}} Egyptian Pound `);
+};
+
+let div1 = document.querySelector(".one");
+let div2 = document.querySelector(".two");
+
+div1.title = div1.className;
+div2.title = div2.className;
+
+div1.innerHTML = div1.className;
+div2.innerHTML = `${div2.className} ${div2.attributes.length}`;
