@@ -1,0 +1,22 @@
+body{    
+    margin: 0;
+}
+.pop-up {
+    background-color: #eee;
+    width: fit-content;
+    padding: 20px 100px;
+    text-align: center;
+    margin: 50px auto 0;
+    position: relative;
+    display: none;
+}
+.pop-up button{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
