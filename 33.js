@@ -14,3 +14,22 @@ setTimeout(function () {
   popUp.style.display = "block";
 }, 5000);
 btn.onclick = () => (popUp.style.display = "none");
+
+let divCounter = document.createElement("div");
+document.body.appendChild(divCounter);
+let time = document.createElement("span");
+divCounter.appendChild(time);
+time.innerHTML = 10;
+let countDown = function () {
+  time.innerHTML--;
+  if (time.innerHTML === "0") {
+    clearInterval(counter);
+    window.open(
+      "https://google.com",
+      "_blank",
+      "width=600,height=600,left=200,top=300"
+    );
+  }
+};
+
+let counter = setInterval(countDown, 500);

@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+
+}
+*{
+    font-size: 20px;
+    border-radius: 5px;
+}
+.input {
+    background-color: #ddd;
+    padding: 30px;
+    width: 600px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.input input[type="text"] {
+    outline: none;
+    width: 450px;
+    border: none;
+    padding: 15px;
+}
+.input input[type="submit"] {
+    width: calc(100% - 475px );
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: #FF4500;
+}
+.task-list {
+    background-color: #ddd;
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.task-list .task {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.task-list .task button {
+    background-color: rgba(255, 0, 0, 0.753);
+    color: white;
+    border: none;
+    font-size: 14px;
+}
