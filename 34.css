@@ -34,14 +34,14 @@ body{
     margin: 0 auto;
     padding: 30px;
 }
-.task-list .task {
+.task-list div {
     background-color: white;
     display: flex;
     justify-content: space-between;
     padding: 15px;
     margin-bottom: 10px;
 }
-.task-list .task button {
+.task-list div button {
     background-color: rgba(255, 0, 0, 0.753);
     color: white;
     border: none;
